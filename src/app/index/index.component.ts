@@ -14,13 +14,14 @@ export class IndexComponent implements OnInit {
 
   ngOnInit() {
     $('#JiSlider').JiSlider({color: '#fff', start: 3, reverse: true}).addClass('ff');
-
+    // $(window).load(function () {
     $('.flexslider').flexslider({
       animation: 'slide',
       start: function (slider) {
         $('body').removeClass('loading');
       }
     });
+    // });
 
     $('.counter').countUp();
   }
